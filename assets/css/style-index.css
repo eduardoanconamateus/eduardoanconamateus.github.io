@@ -7,13 +7,11 @@
 
 .call-figure {
   width: 50%;
-  align-content: center;
 }
 
 .call-image {
   width: 50%;
   border-radius: 100%;
-
 }
 
 .call-text {
@@ -32,12 +30,10 @@
 }
 
 .profile-pic{
-	width: auto;
-	overflow: auto;
-	display: center;
-	margin-left:auto;
-	margin-left: auto;
-
+	display: flex;
+	max-width: 30%;
+	border-radius: 50%;
+	align-self: center;
 }
 
 .titulo-nome{
@@ -53,19 +49,22 @@
 	display: flex;
 	border-style: solid;
 	border-width: 0.1rem;
-	margin: 0.1rem 0.1rem 1rem 0.1rem;
-	padding: .5rem;
+	margin: 1rem 10rem 1rem 10rem;
+	padding: 1rem;
 	font-family: 'Sen', sans-serif;
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 .grid-foto-cv{
 	padding: 0.1rem;
 	margin-top: 2rem;
 	grid-row-gap: 1rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-@media (max-width: 70rem) {
+@media only screen and (max-width: 600px) {
 
 	.titulo-nome{
 		font-size: 1.5em;
@@ -73,8 +72,8 @@
 }
 	
 	.cv-box{
-		font-size: 0.25rem;
-		margin-top: .01rem;
+		font-size: 0.9rem;
+		margin: 1rem 2rem 1rem 2rem;
 
 }
 	.grid-foto-cv{
@@ -84,8 +83,8 @@
 
 	.profile-pic{
 		display: flex;
-		width: 15rem;
-		max-height: 70%;
-		align-content: center;
+		width: 100%;
+		border-radius: 50%;
+		align-self: center;
 	}
 }
